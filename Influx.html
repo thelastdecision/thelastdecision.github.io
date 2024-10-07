@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="utf-8">
+    <meta keywords="Cambio climatico,Greenhouse">
+    <link rel="stylesheet" type="text/css" href="nasa.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet"> 
+
+
+  </head>
+  <body class="text-white bg-dark">
+    <!-- aca inicia los iconos de las redes sociales --> 
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+      <symbol id="bootstrap" viewBox="0 0 118 94">
+        <title>Bootstrap</title>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"></path>
+      </symbol>
+      <symbol id="facebook" viewBox="0 0 16 16">
+        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+      </symbol>
+      <symbol id="instagram" viewBox="0 0 16 16">
+          <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+      </symbol>
+      <symbol id="twitter" viewBox="0 0 16 16">
+        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+      </symbol>
+    </svg>
+    <!-- aca termina los iconos de las redes sociales -->
+
+
+
+
+<!-- aca comienza el menu de navegacion --> 
+
+     <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto s text-white text-decoration-none">
+            <img src="logo.png" class="bd-placeholder-img" width="20%" height="90%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="20%" height="90%" fill="var(--bs-secondary-color)"/></img>
+
+            <span class="fs-4">INOVADORAS</span>
+          </a>
+
+          <ul class="nav nav-pills">
+                     <li class="nav-item"><a href="nasa.html" class="nav-link custom-bg1 text-white" id="custom-hover" aria-current="page">INICIO</a></li>
+            <li class="nav-item"><a href="Influx.html" class="nav-link custom-txt1" id="custom-hover">CAMBIOS CLIMATICOS</a></li>
+            <li class="nav-item"><a href="oco.html" class="nav-link custom-txt1" id="custom-hover">PLANETA</a></li>
+             <li class="nav-item"><a href="noa.html" class="nav-link custom-txt1" id="custom-hover">NOSOTRAS</a></li>
+          </ul>
+        </header>
+    </div>
+
+ <!--aca termina el menu de navegacion -->
+
+<br><br>
+
+
+<!--- aca empieza parrafos-->
+  <div class="row mb-2">
+    <div class="col-md-1">
+   </div>
+    <div class="col-md-10">
+        <h2 class="display-5 mb-1 text-white">Concentraciones de CO2 de columna de OCO-2 GEOS</h2>
+        <p class="blog-post-meta">Octubre,05 2024 by <a href="https://earth.gov/ghgcenter/data-catalog" id="custom-hover" class="custom-txt1">INOVADORAS</a></p>
+
+        <hr>
+     <p>Extensión temporal: 1 de enero de 2015 - 28 de febrero de 2022<br>
+     Resolución temporal: Diaria
+     <br>
+     Alcance espacial: Global
+     <br>
+     Resolución espacial: 0,5° x 0,625°
+     <br>
+     Unidades de datos: Partes por millón (ppm)
+     <br>
+     Tipo de datos: Investigación<br>
+     Latencia de datos: 2-3 meses<br></p>
+    
+
+    <h2>Concentraciones diarias y globales de CO₂ asimilado de 0,5 x 0,625 grados derivadas de los datos satelitales OCO-2, versión 10r</h2>
+        <p>En julio de 2014, la NASA lanzó con éxito el primer satélite de teledetección de la Tierra dedicado para estudiar el dióxido de carbono atmosférico desde el espacio. El Observatorio Orbital de Carbono-2 es una misión científica exploratoria diseñada para recopilar mediciones globales basadas en el espacio del CO2 atmosférico con la precisión, resolución y cobertura necesarias para caracterizar fuentes y sumideros en escalas regionales. Los datos se derivan de las observaciones de OCO-2 que se introdujeron en el Sistema de Assimilación de Datos Constituyente del Sistema de Observación de la Tierra Goddard. Las concentraciones se miden en moles de dióxido de carbono por mol de aire seco a una resolución espacial de 0,5 ° x 0,625 °
+        </p>
+        <blockquote class="blockquote">
+          <h2>Detalles cientificos</h2>
+        </blockquote>
+        <p>Aunque la misión OCO-2 proporciona recuperaciones de XCO₂ basadas en el espacio de alta calidad, los datos se caracterizan por grandes lagunas en la cobertura debido a la estrecha trayectoria terrestre de 10 km de OCO-2 y a la incapacidad de medir a través de nubes y aerosoles espesos. Se han explorado varios métodos diferentes para producir campos de XCO₂ L3 (en cuadrícula) espacialmente completos a partir de los datos satelitales, incluidos el promedio, el kriging y la asimilación de datos. La asimilación de datos sintetiza simulaciones y observaciones, ajustando el estado de los componentes atmosféricos como el CO₂ para reflejar los valores observados, llenando así los huecos de las observaciones cuando y donde no hay ninguna disponible en función de observaciones anteriores. En comparación con otros métodos, la asimilación de datos tiene la ventaja de que da como resultado estimaciones basadas en el conocimiento científico colectivo, en particular del ciclo del carbono de la Tierra y el transporte atmosférico. Para obtener detalles adicionales sobre cómo se obtuvieron estos datos, consulte la Sección 2 de la Guía del usuario del producto OCO-2 GEOS L3 XCO₂ .</h3>
+   </div>
+   <div class="col-md-1">
+   </div>
+  </div>
+
+<!--- aca termina el parrafo-->
+
+<!-- aca empieza el link de nasa-->
+<div class="row mb-2">
+    <div class="col-md-1">
+    </div>
+    <div class="col-md-5">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <h3 class="mb-0">Concentraciones de CO₂ en la columna GEOS OCO-2</h3>
+          <div class="mb-1 text-body-secondary"></div>
+          <br/>
+          <p class="card-text mb-auto">OCO-2 es una misión científica que mide el dióxido de carbono (CO₂) en la atmósfera desde el espacio, enfocándose en identificar fuentes y sumideros a gran escala. Proporciona datos precisos y de alta resolución para analizar la variabilidad del CO₂ a lo largo de los ciclos estacionales y anuales. Además, validará métodos de medición y análisis para futuras misiones de monitoreo sistemático del CO₂.</p> <br>
+          <a href="https://ocov2.jpl.nasa.gov/mission/" class="icon-link gap-1 icon-link-hover stretched-link">
+            misión OCO-2
+            <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+          </a>
+        </div>
+      </div>
+    </div> 
+    <div class="col-md-5">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <h3 class="mb-0">Observatorio de Carbono en órbita-2</h3>
+          <div class="mb-1 text-body-secondary"></div>
+          <br>
+          <p class="card-text mb-auto">El Observatorio vuela con una serie de otros satélites que orbitan alrededor de la Tierra, conocidos como la Constelación Vespertina del Sistema de Observación de la Tierra o el Tren A. Todos estos satélites cruzan el ecuador aproximadamente al mediodía, con unos minutos de diferencia entre sí.</p> 
+          <br><br><br><br>
+         <a href="https://ocov2.jpl.nasa.gov/" class="icon-link gap-1 icon-link-hover stretched-link">Observatorio <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+<!-- aca termina el link de la nasa-->
+
+
+<!--- aca empieza parrafos-->
+  <div class="row mb-2">
+    <div class="col-md-1">
+   </div>
+    <div class="col-md-10">
+      <br>
+      <br>
+      <br>
+        <h2 class="display-5 mb-1 text-white">Concentraciones de dióxido de carbono y metano en el banco de pruebas urbano del Corredor Noreste (NEC)
+</h2>
+        <p class="blog-post-meta">Octubre,05 2024 by <a href="https://earth.gov/ghgcenter/data-catalog">INOVADORAS</a></p>
+
+        <br><br>
+     <p>El Instituto Nacional de Estándares y Tecnología (NIST) ha establecido varios bancos de pruebas urbanos en los EE. UU. Con el propósito de mejorar la medición de las emisiones de gases de efecto invernadero (GEI). Uno de los bancos de pruebas más relevantes se encuentra en el Corredor Noreste de los Estados Unidos (NEC), que abarca ciudades como Baltimore y Washington D.C. Este informe se basa en datos recolectados entre el 1 de enero de 2015 y el 31 de diciembre de 2022, que incluyen concentraciones de dióxido de carbono (CO₂) y metano (CH₄) medidas a través de torres ubicadas en esta región</p>
+    
+
+    <h2>Datos y Metodología</h2>
+        <p>Extensión Temporal: 1 de enero de 2015 – 31 de diciembre de 2022.
+        Resolución Temporal: Promedios horarios.
+        Extensión Espacial: Región del noreste de los EE. UU., con coordenadas geográficas que abarcan 86,20°O – 70,49°O de longitud y 43,71°N – 35,20°N de latitud.
+        Resolución Espacial: Muestras obtenidas de ubicaciones puntuales en las torres de medición.
+        Unidades de Medición:
+        CO₂: Micromoles por mol de aire seco, equivalentes a partes por millón (ppm).
+        CH₄: Nanomoles por mol de aire seco, equivalentes a partes por mil millones (ppb).Estos datos son parte de un esfuerzo continuo por parte del NIST para evaluar y mejorar las capacidades de medición y monitoreo de gases de efecto invernadero en zonas urbanas. Las concentraciones de CO₂ y CH₄ en la capa límite atmosférica pueden ser usadas para inferir patrones de emisiones y variaciones en el tiempo.
+
+        </p>
+        <blockquote class="blockquote">
+          <h2>Concentraciones de Dióxido de Carbono (CO₂)</h2>
+        </blockquote>
+        <p>Las concentraciones de CO₂ mostraron fluctuaciones típicas de áreas urbanas con alta actividad humana, especialmente en ciudades del corredor como Baltimore y Washington D.C. Los valores de concentración variaron de acuerdo con patrones estacionales y ciclos diarios, reflejando tanto las emisiones derivadas del tráfico, la industria y la calefacción, como los procesos de fotosíntesis y respiración en la vegetación circundante.</h3>
+   </div>
+   <div class="col-md-1">
+   </div>
+  </div>
+
+<!--- aca termina el parrafo-->
+
+<!-- aca empieza el link de nasa-->
+<div class="row mb-2">
+    <div class="col-md-1">
+    </div>
+    <div class="col-md-5">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <h3 class="mb-0">Objetivos de la Investigación</h3>
+          <div class="mb-1 text-body-secondary"></div>
+          <br/><br><br>
+          <p class="card-text mb-auto">El principal objetivo del NIST es desarrollar herramientas de medición avanzadas que permitan estimar con mayor precisión las emisiones de gases de efecto invernadero en áreas urbanas y regionales. El banco de pruebas del NEC fue seleccionado debido a las características variables de meteorología, terreno y fuentes de emisiones en la región.</p> <br><br><br><br>
+          <a href="https://doi.org/10.1029/2021GL092744" class="icon-link gap-1 icon-link-hover stretched-link">
+            misión OCO-2
+            <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+          </a>
+        </div>
+      </div>
+    </div> 
+    <div class="col-md-5">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <h3 class="mb-0">Concentraciones de Dióxido de Carbono (CO₂)</h3>
+          <div class="mb-1 text-body-secondary"></div>
+          <br>
+          <br>
+          <p class="card-text mb-auto">Las concentraciones de CO₂ mostraron fluctuaciones típicas de áreas urbanas con alta actividad humana, especialmente en ciudades del corredor como Baltimore y Washington D.C. Los valores de concentración variaron de acuerdo con patrones estacionales y ciclos diarios, reflejando tanto las emisiones derivadas del tráfico, la industria y la calefacción, como los procesos de fotosíntesis y respiración en la vegetación circundante.</p> 
+          <br><br><br>
+         <a href="https://www.nist.gov/greenhouse-gas-measurements/urban-test-beds" class="icon-link gap-1 icon-link-hover stretched-link">Observatorio <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+<!-- aca termina el link de la nasa-->
+
+
+<br><br><br>
+
+<!--- aca empieza parrafos-->
+  <div class="row mb-2">
+    <div class="col-md-1">
+   </div>
+    <div class="col-md-10">
+      <br>
+      <br>
+      <br>
+        <h2 class="display-5 mb-1 text-white">Concentraciones de metano atmosférico del Laboratorio de Monitoreo Global de la NOAA</h2>
+        <p class="blog-post-meta">Octubre,05 2024 by <a href="https://earth.gov/ghgcenter/data-catalog">INOVADORAS</a></p>
+
+        <br><br>
+     <p>Este informe presenta información sobre las concentraciones de metano (CH₄) en la atmósfera, recopiladas por el Laboratorio de Monitoreo Global (GML) de la NOAA desde 1976. El estudio abarca una red de estaciones de medición distribuidas globalmente, contribuyendo a la comprensión de los gases de efecto invernadero (GEI) y su impacto en el cambio climático.</p>
+    
+
+    <h2>Metodología</h2>
+        <p>Fuente de datos: Administración Nacional Oceánica y Atmosférica (NOAA).
+          Tipo de producto: Mediciones terrestres de metano.
+          Gas analizado: Metano (CH₄).
+          Extensión temporal: 1976 - 2023, con variaciones según la estación.
+          Resolución temporal:
+          Datos continuos: medias diarias y mensuales.
+          Datos no continuos: frecuencias variables, que pueden ser diarias o semanales.
+          Extensión espacial: Global, con muestras de múltiples puntos de medición.
+          Unidades de datos: Concentraciones reportadas en partes por mil millones (ppb).
+          Latencia de datos: Actualizaciones anuales.</p>
+        <blockquote class="blockquote">
+          <h2>Precisión y Limitaciones</h2>
+        </blockquote>
+        <p>La incertidumbre de la escala estándar de CH₄ se estima en +/- 0.2% o aproximadamente 3 ppb. La NOAA puede realizar correcciones a los datos basándose en recalibraciones o razones científicas justificadas.</h3>
+   </div>
+   <div class="col-md-1">
+   </div>
+  </div>
+
+<!--- aca termina el parrafo-->
+
+<!-- aca empieza el link de nasa-->
+<div class="row mb-2">
+    <div class="col-md-1">
+    </div>
+    <div class="col-md-5">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <h3 class="mb-0">Reconocimiento</h3>
+          <div class="mb-1 text-body-secondary"></div>
+          <br/><br><br>
+          <p class="card-text mb-auto">Este esfuerzo de recopilación de datos es el resultado de la colaboración global, involucrando a organismos e individuos que permiten la operación de la GGGRN.</p> <br><br><br>
+          <a href="https://ocov2.jpl.nasa.gov/mission/" class="icon-link gap-1 icon-link-hover stretched-link">
+            misión OCO-2
+            <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+          </a>
+        </div>
+      </div>
+    </div> 
+    <div class="col-md-5">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <h3 class="mb-0">Observatorio de Carbono en órbita-2</h3>
+          <div class="mb-1 text-body-secondary"></div>
+          <br>
+          <br>
+          <p class="card-text mb-auto">Las concentraciones de metano atmosférico medidas por la NOAA son esenciales para la comprensión del impacto de los gases de efecto invernadero en el cambio climático. Este informe destaca la importancia de estas mediciones para la investigación y la formulación de políticas climáticas.</p> 
+          <br><br><br>
+         <a href="https://ocov2.jpl.nasa.gov/" class="icon-link gap-1 icon-link-hover stretched-link">Observatorio <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+<!-- aca termina el link de la nasa-->
+
+
+
+
+
+
+<br>
+<br>
+
+    
+  <!-- aca empieza featurettes-->
+  <hr class="featurette-divider">
+    <div class="row featurette">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <h2 class="featurette-heading fw-normal lh-1">Indianápolis</h2>
+        <p class="lead">Es una ciudad de Estados Unidos, fue el lugar predilecto del NIST (Instituto Nacional de Estándares y Tecnología), para hacer una investigación que le permita mejorar la medición de las emisiones de gases de efecto invernadero. Debido a que esta localidad tiene las características necesarias para hacer el estudio: </p>
+          <div class="container mt-2s">
+            <p>
+            -Es una ciudad de tamaño medio, lo suficientemente grande como para tener emisiones significativas de dióxido de carbono (CO₂) y otros gases de efecto invernadero, pero no tan grande como para que el análisis sea abrumador o extremadamente complejo, como podría ser en ciudades más grandes como Nueva York o Los Ángeles.
+            </p>
+            <p>
+            -Está relativamente aislada de otras grandes áreas urbanas. Esto facilita la medición de las emisiones de CO₂ locales sin demasiada interferencia de fuentes de contaminación externas.
+            </p>
+             <p>
+            -Y principalmente por las condiciones de viento en Indianápolis permiten medir las emisiones desde varios ángulos (a favor y en contra del viento), lo que es crucial para validar los métodos que estiman las emisiones.
+            </p>
+          </div>
+      </div>
+    </div>
+    <div class="container mt-2">
+    <hr class="featurette-divider ">
+
+    <div class="row featurette">
+       <div class="col-md-1"></div>
+      <div class="col-md-6 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">Resultado <span class="text-body-secondary"></span></h2>
+        <p class="lead">Para mejorar la precisión de las mediciones en el proyecto INFLUX, se calibraban los equipos utilizando tanques de aire que seguían los estándares de la Organización Meteorológica Mundial (WMO). Se hacían calibraciones antes de usar el equipo, después de cualquier reparación o actualización, y se secaban las muestras de aire para evitar tener que corregir la presencia de vapor de agua todos los años.</p>
+        <p>Cada día, se medía el aire de un tanque de referencia para asegurarse de que los equipos funcionaban bien y corregir posibles errores en las mediciones. Aunque algunas veces se detectaban fallos en los equipos a partir de mediciones ruidosas, esto no siempre predecía una falla inminente. También se realizaban pruebas periódicas para detectar posibles problemas con los tanques de referencia.</p>
+        <p>El proyecto también comparó muestras de aire tomadas directamente de la atmósfera y las obtenidas en frascos (llamadas "flask samples"). Las diferencias para el CO₂ y el CH₄ fueron pequeñas y dentro del rango aceptable, pero para el CO (monóxido de carbono) hubo una discrepancia notable, con las muestras directas mostrando niveles más bajos que las de los frascos. Esto pudo haber sido causado por problemas con la calibración del equipo o porque las muestras no estaban lo suficientemente secas.</p>
+      </div>
+      <div class="col-md-4 order-md-1 mt-5">
+        <img src="air_indianapolis.jpg"air_indianapolis width="400" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 400x400" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/></img>
+      </div>
+    </div>
+    </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+   <!--- aca termina el fituretes-->    
+
+      
+    <!-- aca comienza el footer-->
+
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+          </a>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/nasa?igsh=MWN0eDhvd3kxMXdlZQ=="><img src="logo_insta.png" width="46" height="34"><use xlink:href="#instagram"/></img></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="https://www.facebook.com/share/UZT4XcA2Rkq63fVr/"><img src="logo_face.png" class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+        </ul>
+      </footer>
+    </div>
+
+
+     <!--aca termina el footer-->
+     
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"> </script>
+
+</body>
+ </html>
